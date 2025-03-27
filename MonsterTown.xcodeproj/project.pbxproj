@@ -20,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		A544F02F2D961B010043BCA9 /* MonsterTown */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MonsterTown; sourceTree = BUILT_PRODUCTS_DIR; };
+		A544F0392D961B1F0043BCA9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -44,6 +45,7 @@
 		A544F0262D961B010043BCA9 = {
 			isa = PBXGroup;
 			children = (
+				A544F0392D961B1F0043BCA9 /* README.md */,
 				A544F0312D961B010043BCA9 /* MonsterTown */,
 				A544F0302D961B010043BCA9 /* Products */,
 			);
