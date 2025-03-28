@@ -7,5 +7,6 @@
 
 import Foundation
 
-print("Hello, World!")
+var myTown = Town()
 
+print("Population: \(myTown.population)\nNumber of spotlights: \(myTown.numberOfSpotlight)")
