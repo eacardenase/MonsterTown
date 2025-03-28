@@ -17,7 +17,15 @@ myTown.changePopulation(by: 500)
 //genericMonster.town = myTown
 //genericMonster.terrorizeTown()
 
-let fredTheZombie = Zombie()
+//let fredTheZombie = Zombie()
+let fredTheZombie: Monster = Zombie()
 fredTheZombie.town = myTown
 fredTheZombie.terrorizeTown()
 fredTheZombie.town?.printDescription()
+//fredTheZombie.walksWithLimp = true // error if Monster type
+(fredTheZombie as? Zombie)?.walksWithLimp = true
+//fredTheZombie.walksWithLimp = true
+
+if fredTheZombie is Zombie {
+    print("I knew it!")
+}
