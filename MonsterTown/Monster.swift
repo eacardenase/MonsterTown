@@ -12,7 +12,7 @@ class Monster {
     var name = "Monster"
     
     func terrorizeTown() {
-        if let town {
+        if town != nil { // town is not used, so boolean validation is preferred
             print("\(name) is terrorizing a town!")
         } else {
             print("\(name) hasn't found a town to terrorize yet...")
