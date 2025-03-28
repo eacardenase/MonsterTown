@@ -8,11 +8,11 @@
 import Foundation
 
 var myTown = Town()
-var yourTown = myTown
+//var yourTown = myTown
 
 myTown.changePopulation(by: 500)
 
-print("myTown has \(myTown.population) and yourTown has \(yourTown.population)")
+//print("myTown has \(myTown.population) and yourTown has \(yourTown.population)")
 
 //myTown.printDescription()
 //print(myTown)
@@ -33,7 +33,7 @@ fredTheZombie.town?.printDescription()
 //    print("I knew it!")
 //}
 
-var frederickTheZombie = fredTheZombie
-frederickTheZombie.name = "Frederick"
-
-print("Fred's name is \(fredTheZombie.name)")
+//var frederickTheZombie = fredTheZombie
+//frederickTheZombie.name = "Frederick"
+//
+//print("Fred's name is \(fredTheZombie.name)")
