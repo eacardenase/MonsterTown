@@ -38,26 +38,27 @@ myTown.changePopulation(by: 500)
 //
 //print("Fred's name is \(fredTheZombie.name)")
 
-let dracula = Vampire()
-dracula.town = myTown
+//let dracula = Vampire()
+//dracula.town = myTown
+//
+//dracula.terrorizeTown()
+//print(dracula.thralls)
+//print(dracula.town?.population)
+//
+//dracula.terrorizeTown()
+//print(dracula.thralls)
+//print(dracula.town?.population)
+//
+//dracula.terrorizeTown()
+//print(dracula.thralls)
+//print(dracula.town?.population)
+//
+//dracula.terrorizeTown()
+//print(dracula.thralls)
+//print(dracula.town?.population)
+//
+//dracula.terrorizeTown()
+//print(dracula.thralls)
+//print(dracula.town?.population)
 
-dracula.terrorizeTown()
-print(dracula.thralls)
-print(dracula.town?.population)
-
-dracula.terrorizeTown()
-print(dracula.thralls)
-print(dracula.town?.population)
-
-dracula.terrorizeTown()
-print(dracula.thralls)
-print(dracula.town?.population)
-
-dracula.terrorizeTown()
-print(dracula.thralls)
-print(dracula.town?.population)
-
-dracula.terrorizeTown()
-print(dracula.thralls)
-print(dracula.town?.population)
-
+print(Zombie.makeSpookyNoise())

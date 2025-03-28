@@ -19,4 +19,19 @@ class Zombie: Monster {
         super.terrorizeTown()
         regenerate()
     }
+    
+    // can be overriden by subclasses
+    class func makeSpookyNoise() -> String {
+        return "Brains..."
+    }
+    
+//    // cannot be overriden by subclasses
+//    static func makeSpookyNoise() -> String {
+//        return "Brains..."
+//    }
+//    
+//    // cannot be overriden by subclasses
+//    final class func makeSpookyNoise() -> String {
+//        return "Brains..."
+//    }
 }
