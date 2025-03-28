@@ -21,11 +21,11 @@ myTown.changePopulation(by: 500)
 //genericMonster.town = myTown
 //genericMonster.terrorizeTown()
 
-let fredTheZombie = Zombie()
+//let fredTheZombie = Zombie()
 //let fredTheZombie: Monster = Zombie()
-fredTheZombie.town = myTown
-fredTheZombie.terrorizeTown()
-fredTheZombie.town?.printDescription()
+//fredTheZombie.town = myTown
+//fredTheZombie.terrorizeTown()
+//fredTheZombie.town?.printDescription()
 //fredTheZombie.walksWithLimp = true // error if Monster type
 //(fredTheZombie as? Zombie)?.walksWithLimp = true
 
@@ -37,3 +37,27 @@ fredTheZombie.town?.printDescription()
 //frederickTheZombie.name = "Frederick"
 //
 //print("Fred's name is \(fredTheZombie.name)")
+
+let dracula = Vampire()
+dracula.town = myTown
+
+dracula.terrorizeTown()
+print(dracula.thralls)
+print(dracula.town?.population)
+
+dracula.terrorizeTown()
+print(dracula.thralls)
+print(dracula.town?.population)
+
+dracula.terrorizeTown()
+print(dracula.thralls)
+print(dracula.town?.population)
+
+dracula.terrorizeTown()
+print(dracula.thralls)
+print(dracula.town?.population)
+
+dracula.terrorizeTown()
+print(dracula.thralls)
+print(dracula.town?.population)
+
