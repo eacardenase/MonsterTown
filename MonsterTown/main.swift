@@ -10,7 +10,11 @@ import Foundation
 var myTown = Town()
 //var yourTown = myTown
 
-myTown.changePopulation(by: 500)
+let myTownSize = myTown.townSize
+print(myTownSize)
+
+myTown.changePopulation(by: 1_000_000)
+print("Size: \(myTown.townSize)\nPopulation: \(myTown.population)")
 
 //print("myTown has \(myTown.population) and yourTown has \(yourTown.population)")
 
@@ -21,11 +25,11 @@ myTown.changePopulation(by: 500)
 //genericMonster.town = myTown
 //genericMonster.terrorizeTown()
 
-//let fredTheZombie = Zombie()
+let fredTheZombie = Zombie()
 //let fredTheZombie: Monster = Zombie()
-//fredTheZombie.town = myTown
-//fredTheZombie.terrorizeTown()
-//fredTheZombie.town?.printDescription()
+fredTheZombie.town = myTown
+fredTheZombie.terrorizeTown()
+fredTheZombie.town?.printDescription()
 //fredTheZombie.walksWithLimp = true // error if Monster type
 //(fredTheZombie as? Zombie)?.walksWithLimp = true
 

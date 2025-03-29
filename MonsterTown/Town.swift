@@ -16,6 +16,17 @@ struct Town {
         case small, medium, large
     }
     
+    lazy var townSize: Size = {
+        switch population {
+        case 0...10_000:
+            return .small
+        case 10_001...100_000:
+            return .medium
+        default:
+            return .large
+        }
+    }()
+    
     func printDescription() {
         print("Population: \(population)\nNumber of spotlights: \(numberOfSpotlights)")
 //        print("Population: \(myTown.population)\nNumber of spotlights: \(myTown.numberOfSpotlights)") // still works 
