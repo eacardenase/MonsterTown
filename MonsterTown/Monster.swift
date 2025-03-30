@@ -14,8 +14,11 @@ class Monster {
         get {
             return town?.population ?? 0
         }
-        set(newVictimPool) {
-            town?.population = newVictimPool
+//        set(newVictimPool) {
+//            town?.population = newVictimPool
+//        }
+        set {
+            town?.population = newValue // using the default new value name
         }
     }
     
