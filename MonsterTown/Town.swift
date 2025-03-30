@@ -16,10 +16,14 @@ struct Town {
 //            print("The population has changed to \(population) from \(oldPopulation)")
 //        }
         didSet {
-            print("The population has changed to \(population) from \(oldValue)")
+            if population < oldValue {
+                print("The population has changed to \(population) from \(oldValue)")
+            }
         }
         willSet {
-            print("The population will change from \(population) to \(newValue)")
+            if newValue < population {
+                print("The population will change from \(population) to \(newValue)")
+            }
         }
     }
     var numberOfSpotlights = 4
