@@ -10,8 +10,8 @@ import Foundation
 struct Town {
     static let world = "Earth"
     
-    let region = "Middle"
-    var population = 5_422 {
+    let region: String
+    var population: Int {
 //        didSet(oldPopulation) {
 //            print("The population has changed to \(population) from \(oldPopulation)")
 //        }
@@ -26,7 +26,9 @@ struct Town {
             }
         }
     }
-    var numberOfSpotlights = 4
+    var numberOfSpotlights: Int
+    
+//    init
     
     enum Size {
         case small, medium, large
@@ -55,8 +57,8 @@ struct Town {
     }
     
     func printDescription() {
-        print("Population: \(population)\nNumber of spotlights: \(numberOfSpotlights)")
-//        print("Population: \(myTown.population)\nNumber of spotlights: \(myTown.numberOfSpotlights)") // still works 
+        print("Population: \(population)\nNumber of spotlights: \(numberOfSpotlights)\nRegion: \(region)")
+//        print("Population: \(myTown.population)\nNumber of spotlights: \(myTown.numberOfSpotlights)") // still works
     }
     
     mutating func changePopulation(by amount: Int) {
