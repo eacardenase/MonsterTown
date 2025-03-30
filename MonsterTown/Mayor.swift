@@ -8,7 +8,11 @@
 import Foundation
 
 struct Mayor {
-    func offerCondolences() {
+    private var anxietyLevel = 0
+    
+    mutating func offerCondolences() {
+        anxietyLevel += 1
+        
         let condolences = """
               I'm deeply saddened to hear about this latest tragedy.
               I promise that my office is looking into the nature
