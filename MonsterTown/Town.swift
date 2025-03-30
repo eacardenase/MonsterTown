@@ -10,6 +10,7 @@ import Foundation
 struct Town {
     static let world = "Earth"
     
+    var mayor = Mayor()
     let region = "Middle"
     var population = 5_422 {
 //        didSet(oldPopulation) {
@@ -18,6 +19,8 @@ struct Town {
         didSet {
             if population < oldValue {
                 print("The population has changed to \(population) from \(oldValue)")
+                
+                mayor.offerCondolences()
             }
         }
         willSet {
