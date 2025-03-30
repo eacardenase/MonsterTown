@@ -66,3 +66,9 @@ fredTheZombie.town?.printDescription()
 //print(dracula.town?.population)
 
 print(Zombie.makeSpookyNoise())
+
+print("Victim pool: \(fredTheZombie.victimPool)")
+
+fredTheZombie.victimPool = 500
+
+print("Victim pool: \(fredTheZombie.victimPool)\nPopulation: \(fredTheZombie.town?.population)")
