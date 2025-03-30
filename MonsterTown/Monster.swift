@@ -8,6 +8,8 @@
 import Foundation
 
 class Monster {
+    static let isTerrifyng = true
+    
     var town: Town?
     var name = "Monster"
     var victimPool: Int {
