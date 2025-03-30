@@ -20,9 +20,23 @@ class Zombie: Monster {
         regenerate()
     }
     
+//    class let spookyNoise = "Brains..." // not supported in classes
+//    static let spookyNoise = "Brains..." // cannot be overriden by its subclasses
+    
+    // allows overriding
+//    class var spookyNoise: String {
+//        get {
+//            return "Brains..."
+//        }
+//    }
+//    class var spookyNoise: String {
+//        return "Brains..."
+//    }
+    class var spookyNoise: String { "Brains..." }
+    
     // can be overriden by subclasses
     class func makeSpookyNoise() -> String {
-        return "Brains..."
+        return Self.spookyNoise
     }
     
 //    // cannot be overriden by subclasses

@@ -8,6 +8,8 @@
 import Foundation
 
 struct Town {
+    static let world = "Earth"
+    
     let region = "Middle"
     var population = 5_422 {
 //        didSet(oldPopulation) {
