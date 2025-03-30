@@ -71,4 +71,4 @@ print("Victim pool: \(fredTheZombie.victimPool)")
 
 fredTheZombie.victimPool = 500
 
-print("Victim pool: \(fredTheZombie.victimPool)\nPopulation: \(fredTheZombie.town?.population)")
+print("Victim pool: \(fredTheZombie.victimPool)")
