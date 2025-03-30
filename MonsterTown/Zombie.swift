@@ -32,7 +32,7 @@ class Zombie: Monster {
 //    class var spookyNoise: String {
 //        return "Brains..."
 //    }
-    class var spookyNoise: String { "Brains..." }
+    override class var spookyNoise: String { "Brains..." }
     
     // can be overriden by subclasses
     class func makeSpookyNoise() -> String {

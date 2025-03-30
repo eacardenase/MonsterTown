@@ -21,6 +21,7 @@ class Monster {
             town?.population = newValue // using the default new value name
         }
     }
+    class var spookyNoise: String { "Grrr" }
     
     func terrorizeTown() {
         if town != nil { // town is not used, so boolean validation is preferred
