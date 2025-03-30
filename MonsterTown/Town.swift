@@ -28,7 +28,11 @@ struct Town {
     }
     var numberOfSpotlights: Int
     
-//    init
+    init(region: String, population: Int, spotlights: Int) {
+        self.region = region
+        self.population = population
+        numberOfSpotlights = spotlights
+    }
     
     enum Size {
         case small, medium, large

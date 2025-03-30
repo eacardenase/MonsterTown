@@ -8,7 +8,7 @@
 import Foundation
 
 //var myTown = Town()
-var myTown = Town(region: "Middle", population: 10_000, numberOfSpotlights: 6)
+var myTown = Town(region: "Middle", population: 10_000, spotlights: 6)
 //var yourTown = myTown
 
 myTown.printDescription()
