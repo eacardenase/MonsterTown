@@ -11,7 +11,7 @@ class Monster {
     static let isTerrifyng = true
     
     var town: Town?
-    var name = "Monster"
+    var name: String
     var victimPool: Int {
         get {
             return town?.population ?? 0
@@ -24,6 +24,16 @@ class Monster {
         }
     }
     class var spookyNoise: String { "Grrr" }
+    
+//    init(town: Town?, monsterName: String) {
+//        self.town = town
+//        name = monsterName
+//    }
+    
+    init(town: Town? = nil, monsterName: String = "Monster") {
+        self.town = town
+        name = monsterName
+    }
     
     func terrorizeTown() {
         if town != nil { // town is not used, so boolean validation is preferred

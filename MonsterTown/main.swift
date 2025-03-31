@@ -28,9 +28,8 @@ print("Size: \(myTown.townSize)\nPopulation: \(myTown.population)")
 //genericMonster.town = myTown
 //genericMonster.terrorizeTown()
 
-let fredTheZombie = Zombie()
+let fredTheZombie = Zombie(town: myTown, monsterName: "Zombie")
 //let fredTheZombie: Monster = Zombie()
-fredTheZombie.town = myTown
 fredTheZombie.terrorizeTown()
 fredTheZombie.town?.printDescription()
 //fredTheZombie.walksWithLimp = true // error if Monster type
