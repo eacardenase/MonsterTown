@@ -35,6 +35,8 @@ fredTheZombie.town?.printDescription()
 //fredTheZombie.walksWithLimp = true // error if Monster type
 //(fredTheZombie as? Zombie)?.walksWithLimp = true
 
+var convenienceZombie = Zombie(limp: true, fallingAppart: false)
+
 //if fredTheZombie is Zombie {
 //    print("I knew it!")
 //}

@@ -21,6 +21,15 @@ class Zombie: Monster {
         super.init(town: town, monsterName: monsterName)
     }
     
+    convenience init(limp: Bool, fallingAppart: Bool) {
+        self.init(limp: limp, fallingAppart: fallingAppart, town: nil, monsterName: "Fred")
+        
+        // instance is ready for use
+        if walksWithLimp {
+            print("This zombie has a bad knee.")
+        }
+    }
+    
     func regenerate() {
         walksWithLimp = false
     }
