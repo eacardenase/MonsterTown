@@ -16,16 +16,12 @@ class Zombie: Monster {
 //        self.init(limp: false, fallingAppart: false, town: town, monsterName: monsterName)
 //    }
     
-    required init(town: Town?, monsterName: String) {
-        walksWithLimp = false
-        isFallingApart = false
-        
-        super.init(town: town, monsterName: monsterName)
-    }
-    
-    deinit {
-        print("Zombie \(name) is no longer with us.")
-    }
+//    required init(town: Town?, monsterName: String) {
+//        walksWithLimp = false
+//        isFallingApart = false
+//        
+//        super.init(town: town, monsterName: monsterName)
+//    }
     
     init(limp: Bool, fallingAppart: Bool, town: Town?, monsterName: String) {
 //        super.init(town: town, monsterName: monsterName) // compile error, self.walksWithLimp not initialized at super.init
@@ -36,6 +32,10 @@ class Zombie: Monster {
         super.init(town: town, monsterName: monsterName)
     }
     
+    convenience required init(town: Town?, monsterName: String) {
+        self.init(limp: false, fallingAppart: false, town: town, monsterName: monsterName)
+    }
+    
     convenience init(limp: Bool, fallingAppart: Bool) {
         self.init(limp: limp, fallingAppart: fallingAppart, town: nil, monsterName: "Fred")
         
@@ -43,6 +43,10 @@ class Zombie: Monster {
         if walksWithLimp {
             print("This zombie has a bad knee.")
         }
+    }
+    
+    deinit {
+        print("Zombie \(name) is no longer with us.")
     }
     
     func regenerate() {
