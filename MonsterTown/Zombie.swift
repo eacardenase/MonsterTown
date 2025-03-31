@@ -12,6 +12,17 @@ class Zombie: Monster {
 //    private var isFallingApart = false
     private(set) var isFallingApart: Bool
     
+//    required convenience init(town: Town?, monsterName: String) {
+//        self.init(limp: false, fallingAppart: false, town: town, monsterName: monsterName)
+//    }
+    
+    required init(town: Town?, monsterName: String) {
+        walksWithLimp = false
+        isFallingApart = false
+        
+        super.init(town: town, monsterName: monsterName)
+    }
+    
     init(limp: Bool, fallingAppart: Bool, town: Town?, monsterName: String) {
 //        super.init(town: town, monsterName: monsterName) // compile error, self.walksWithLimp not initialized at super.init
         
