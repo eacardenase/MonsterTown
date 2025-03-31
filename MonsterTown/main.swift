@@ -8,16 +8,16 @@
 import Foundation
 
 //var myTown = Town()
-var myTown = Town(population: 10_000, spotlights: 6)
+var myTown = Town(population: 0, spotlights: 6)
 //var yourTown = myTown
 
-myTown.printDescription()
+myTown?.printDescription()
 
-let myTownSize = myTown.townSize
-print(myTownSize)
+let myTownSize = myTown?.townSize
+print(String(describing: myTownSize))
 
-myTown.changePopulation(by: 1_000_000)
-print("Size: \(myTown.townSize)\nPopulation: \(myTown.population)")
+myTown?.changePopulation(by: 1_000_000)
+print("Size: \(String(describing: myTown?.townSize))\nPopulation: \(String(describing: myTown?.population))")
 
 //print("myTown has \(myTown.population) and yourTown has \(yourTown.population)")
 
