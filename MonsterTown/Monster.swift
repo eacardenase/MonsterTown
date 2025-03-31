@@ -25,7 +25,9 @@ class Monster {
     }
     class var spookyNoise: String { "Grrr" }
     
-    required init(town: Town?, monsterName: String) {
+    required init?(town: Town?, monsterName: String) {
+        guard !monsterName.isEmpty else { return nil }
+        
         self.town = town
         name = monsterName
     }
