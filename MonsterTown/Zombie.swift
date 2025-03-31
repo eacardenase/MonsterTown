@@ -8,9 +8,18 @@
 import Foundation
 
 class Zombie: Monster {
-    var walksWithLimp = true
+    var walksWithLimp: Bool
 //    private var isFallingApart = false
-    private(set) var isFallingApart = false
+    private(set) var isFallingApart: Bool
+    
+    init(limp: Bool, fallingAppart: Bool, town: Town?, monsterName: String) {
+//        super.init(town: town, monsterName: monsterName) // compile error, self.walksWithLimp not initialized at super.init
+        
+        walksWithLimp = limp
+        isFallingApart = fallingAppart
+        
+        super.init(town: town, monsterName: monsterName)
+    }
     
     func regenerate() {
         walksWithLimp = false

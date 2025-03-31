@@ -25,15 +25,15 @@ class Monster {
     }
     class var spookyNoise: String { "Grrr" }
     
-//    init(town: Town?, monsterName: String) {
-//        self.town = town
-//        name = monsterName
-//    }
-    
-    init(town: Town? = nil, monsterName: String = "Monster") {
+    init(town: Town?, monsterName: String) {
         self.town = town
         name = monsterName
     }
+    
+//    init(town: Town? = nil, monsterName: String = "Monster") {
+//        self.town = town
+//        name = monsterName
+//    }
     
     func terrorizeTown() {
         if town != nil { // town is not used, so boolean validation is preferred

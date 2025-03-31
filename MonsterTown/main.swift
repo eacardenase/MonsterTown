@@ -28,7 +28,7 @@ print("Size: \(myTown.townSize)\nPopulation: \(myTown.population)")
 //genericMonster.town = myTown
 //genericMonster.terrorizeTown()
 
-let fredTheZombie = Zombie(town: myTown, monsterName: "Zombie")
+let fredTheZombie = Zombie(limp: true, fallingAppart: false, town: myTown, monsterName: "Zombie")
 //let fredTheZombie: Monster = Zombie()
 fredTheZombie.terrorizeTown()
 fredTheZombie.town?.printDescription()

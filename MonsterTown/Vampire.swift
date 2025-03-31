@@ -14,7 +14,7 @@ class Vampire: Monster {
         super.terrorizeTown()
         
         if town != nil && town!.population > 0 {
-            thralls.append(Vampire())
+            thralls.append(Vampire(town: nil, monsterName: "Vampire"))
             town?.changePopulation(by: -1)
         }
     }
