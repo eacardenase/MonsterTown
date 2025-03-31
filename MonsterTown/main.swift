@@ -28,10 +28,10 @@ print("Size: \(myTown.townSize)\nPopulation: \(myTown.population)")
 //genericMonster.town = myTown
 //genericMonster.terrorizeTown()
 
-let fredTheZombie = Zombie(limp: true, fallingAppart: false, town: myTown, monsterName: "Zombie")
+var fredTheZombie: Zombie? = Zombie(limp: true, fallingAppart: false, town: myTown, monsterName: "Fred")
 //let fredTheZombie: Monster = Zombie()
-fredTheZombie.terrorizeTown()
-fredTheZombie.town?.printDescription()
+fredTheZombie?.terrorizeTown()
+fredTheZombie?.town?.printDescription()
 //fredTheZombie.walksWithLimp = true // error if Monster type
 //(fredTheZombie as? Zombie)?.walksWithLimp = true
 
@@ -76,8 +76,10 @@ if Zombie.isTerrifyng {
     print("Run away!!!")
 }
 
-print("Victim pool: \(fredTheZombie.victimPool)")
+print("Victim pool: \(String(describing: fredTheZombie?.victimPool))")
 
-fredTheZombie.victimPool = 500
+fredTheZombie?.victimPool = 500
 
-print("Victim pool: \(fredTheZombie.victimPool)")
+print("Victim pool: \(String(describing: fredTheZombie?.victimPool))")
+
+fredTheZombie = nil

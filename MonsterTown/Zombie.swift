@@ -23,6 +23,10 @@ class Zombie: Monster {
         super.init(town: town, monsterName: monsterName)
     }
     
+    deinit {
+        print("Zombie \(name) is no longer with us.")
+    }
+    
     init(limp: Bool, fallingAppart: Bool, town: Town?, monsterName: String) {
 //        super.init(town: town, monsterName: monsterName) // compile error, self.walksWithLimp not initialized at super.init
         
