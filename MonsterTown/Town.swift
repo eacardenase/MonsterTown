@@ -11,21 +11,7 @@ struct Town {
     static let world = "Earth"
     
     let region: String
-    var population: Int {
-//        didSet(oldPopulation) {
-//            print("The population has changed to \(population) from \(oldPopulation)")
-//        }
-        didSet {
-            if population < oldValue {
-                print("The population has changed to \(population) from \(oldValue)")
-            }
-        }
-        willSet {
-            if newValue < population {
-                print("The population will change from \(population) to \(newValue)")
-            }
-        }
-    }
+    @Logged(warningValue: 50) var population: Int = 0
     var numberOfSpotlights: Int
     
 //    init(region: String, population: Int, spotlights: Int) {

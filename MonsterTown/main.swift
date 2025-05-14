@@ -8,7 +8,7 @@
 import Foundation
 
 //var myTown = Town()
-var myTown = Town(population: 0, spotlights: 6)
+var myTown = Town(population: 100, spotlights: 6)
 //var yourTown = myTown
 
 myTown?.printDescription()
@@ -16,7 +16,7 @@ myTown?.printDescription()
 let myTownSize = myTown?.townSize
 print(String(describing: myTownSize))
 
-myTown?.changePopulation(by: 1_000_000)
+myTown?.changePopulation(by: 10)
 print("Size: \(String(describing: myTown?.townSize))\nPopulation: \(String(describing: myTown?.population))")
 
 //print("myTown has \(myTown.population) and yourTown has \(yourTown.population)")
@@ -78,7 +78,12 @@ if Zombie.isTerrifyng {
 
 print("Victim pool: \(String(describing: fredTheZombie?.victimPool))")
 
-fredTheZombie?.victimPool = 500
+fredTheZombie?.victimPool = 80
+
+fredTheZombie?.terrorizeTown()
+fredTheZombie?.terrorizeTown()
+fredTheZombie?.terrorizeTown()
+fredTheZombie?.terrorizeTown()
 
 print("Victim pool: \(String(describing: fredTheZombie?.victimPool))")
 
