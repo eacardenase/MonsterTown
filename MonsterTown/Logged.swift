@@ -7,11 +7,11 @@
 
 import Foundation
 
-@propertyWrapper struct Logged {
-    private var storage: Int
+@propertyWrapper struct Logged<T> where T: CustomStringConvertible {
+    private var storage: T
 //    private var warningValue: Int
     
-    var wrappedValue: Int {
+    var wrappedValue: T {
         set {
             print("Old value: \(storage). New value: \(newValue)")
             
@@ -26,7 +26,7 @@ import Foundation
         }
     }
     
-    init(wrappedValue: Int, /*warningValue: Int*/) {
+    init(wrappedValue: T, /*warningValue: Int*/) {
         storage = wrappedValue
 //        self.warningValue = warningValue
     }

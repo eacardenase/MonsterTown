@@ -11,7 +11,7 @@ struct Town {
     static let world = "Earth"
     
     let region: String
-    @Logged(warningValue: 50) var population: Int = 0
+    @Logged var population: Int = 0
     var numberOfSpotlights: Int
     
 //    init(region: String, population: Int, spotlights: Int) {
